@@ -1,0 +1,44 @@
+<!-- ソースコードを見た人は減額されます。 -->
+<html>
+    <head>
+        <title>10万円給付申込フォーム/title>
+        <style>
+            textarea {
+                width: 100%;
+                height: 200px;
+            }
+            
+            button {
+                width: 100%;
+                margin: 10px 0;
+            }
+            
+            .area {
+                margin: 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>10万円給付申込フォーム</h1>
+        <div class="area">
+            <label>振込先</label>
+            <textarea></textarea>
+        </div>
+        <div class="area">
+            <button id="kudasai">10万円ください</button>
+        </div>
+        <div class="area">
+            <a href="https://github.com/hibi-myzk/text-to-html">https://github.com/hibi-myzk/text-to-html</a>
+        </div>
+        <script>
+            function kudasai() {
+                var ua = window.navigator.userAgent.toLowerCase();
+                if (0 <= ua.indexOf('msie') || 0 <= ua.indexOf('trident')) {
+                    alert("IEをお使いの方には給付できません。");
+                } else {
+                    alert("給付しました！");
+                }
+            }
+        </script>
+    </body>
+</html>
